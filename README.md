@@ -6,6 +6,27 @@ Built with **Java and Swing**, this project demonstrates object-oriented program
 
 > **Status:** Work in progress. Creating a plan, calculating spending allowances, and logging preset meal payments are implemented. Saving plans, editing account details, and submitting custom payments are not yet available.
 
+## Download and Run
+
+**[Download Meal Plan Tracker v0.1.0 (.jar)](https://github.com/hildebrandchase/MealPlanTracker/releases/download/v0.1.0/MealPlanTracker-0.1.0.jar)** · [Release notes](https://github.com/hildebrandchase/MealPlanTracker/releases/tag/v0.1.0)
+
+Try the prototype without an IDE or compiling the source code. The downloadable JAR requires **Java 21 or newer** and a desktop environment; Java is not bundled with the download.
+
+1. Download `MealPlanTracker-0.1.0.jar` using the link above.
+2. Open a terminal in the folder containing the downloaded file. On Windows, right-click inside the folder and select **Open in Terminal**.
+3. Check your Java version, then launch the app:
+
+```bash
+java -version
+java -jar MealPlanTracker-0.1.0.jar
+```
+
+If `java` is not recognized, install Java 21 or newer and ensure it is available on your PATH, then reopen the terminal. If you see `UnsupportedClassVersionError`, check that `java -version` reports version 21 or newer.
+
+For a quick demo, create a plan with a balance of `1400`, total weeks of `16`, current week of `2`, and breakfast, lunch, and dinner costs of `5`, `8`, and `10`. The overview starts at **$100 per week** and approximately **$14.29 per day**. Log a meal to see the balance and allowances update.
+
+This is a prototype release. Plans are not saved, and several controls are unfinished; see [Current Limitations](#current-limitations).
+
 ## Features
 
 - **Custom meal plans:** Enter a plan name, starting balance, total weeks, current week, and preset meal costs.
@@ -14,7 +35,7 @@ Built with **Java and Swing**, this project demonstrates object-oriented program
 - **Updated calculations:** Recalculate spending allowances after each logged meal.
 - **Basic input checks:** Display warnings for empty fields and nonnumeric entries.
 
-## Getting Started
+## Build from Source
 
 ### Requirements
 
